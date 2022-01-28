@@ -50,7 +50,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-r_clang_osx--arm64-green.svg)](https://anaconda.org/conda-forge/r_clang_osx-arm64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r_clang_osx-arm64.svg)](https://anaconda.org/conda-forge/r_clang_osx-arm64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r_clang_osx-arm64.svg)](https://anaconda.org/conda-forge/r_clang_osx-arm64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r_clang_osx-arm64.svg)](https://anaconda.org/conda-forge/r_clang_osx-arm64) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r_clang_linux--64-green.svg)](https://anaconda.org/conda-forge/r_clang_linux-64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r_clang_linux-64.svg)](https://anaconda.org/conda-forge/r_clang_linux-64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r_clang_linux-64.svg)](https://anaconda.org/conda-forge/r_clang_linux-64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r_clang_linux-64.svg)](https://anaconda.org/conda-forge/r_clang_linux-64) |
 
 Installing r_clang_activation
 =============================
@@ -62,23 +62,24 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `r_clang_osx-arm64` can be installed with:
+Once the `conda-forge` channel has been enabled, `r_clang_linux-64` can be installed with:
 
 ```
-conda install r_clang_osx-arm64
+conda install r_clang_linux-64
 ```
 
-It is possible to list all of the versions of `r_clang_osx-arm64` available on your platform with:
+It is possible to list all of the versions of `r_clang_linux-64` available on your platform with:
 
 ```
-conda search r_clang_osx-arm64 --channel conda-forge
+conda search r_clang_linux-64 --channel conda-forge
 ```
 
 
 About conda-forge
 =================
 
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+[![Powered by
+NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
