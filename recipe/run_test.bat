@@ -17,5 +17,7 @@ md "compiletest17\src"
 IF %ERRORLEVEL% NEQ 0 exit 1
 copy test_cxx17.cpp "compiletest17\src\test_cxx17.cpp"
 IF %ERRORLEVEL% NEQ 0 exit 1
+echo CXX_STD=CXX17 > compiletest17\src\Makevars.win
+IF %ERRORLEVEL% NEQ 0 exit 1
 R CMD INSTALL --build compiletest17
 IF %ERRORLEVEL% NEQ 0 exit 1
