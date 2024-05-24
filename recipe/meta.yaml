@@ -11,6 +11,7 @@ build:
 requirements:
   run:
     - clang_{{ target_platform }}  {{ version }}
+    - clangxx_{{ target_platform }}  {{ version }}
 
 test:
   requires:
