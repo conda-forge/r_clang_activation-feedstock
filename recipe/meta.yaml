@@ -1,16 +1,17 @@
-{% set version = "11.0.0" %}
+{% set version = "18.1.5" %}
 
 package:
   name: "r_clang_{{ target_platform }}"
   version: {{ version }}
 
 build:
-  number: 2
+  number: 0
   skip: true  # [not win]
 
 requirements:
   run:
     - clang_{{ target_platform }}  {{ version }}
+    - clangxx_{{ target_platform }}  {{ version }}
 
 test:
   requires:
