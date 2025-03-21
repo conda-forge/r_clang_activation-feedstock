@@ -1,4 +1,4 @@
-{% set version = "19.1" %}
+{% set version = "20.1" %}
 
 package:
   name: "r_clang_{{ target_platform }}"
