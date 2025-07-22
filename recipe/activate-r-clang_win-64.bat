@@ -1,12 +1,15 @@
-for /f %%i in ('where clang.exe') do (
-  set "CLANG_PATH=%%i"
-  goto :clang_end
+for /f "tokens=*" %%i in ('where clang.exe') do (
+  echo %%i | findstr /i /c:"Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools" >nul
+  if errorlevel 1 (
+    set "CLANG_PATH=%%i"
+    goto :clang_end
+  )
 )
 :clang_end
 set "CLANG_PATH_CYG=%CLANG_PATH:\=/%"
 set "CLANG_PATH_CYG=/%CLANG_PATH_CYG::=%"
 
-for /f %%i in ('where r_clang_wrapper.bat') do (
+for /f "tokens=*" %%i in ('where r_clang_wrapper.bat') do (
   set "CLANG_WRAPPER_PATH=%%i"
   goto :clang_wrapper_end
 )
@@ -14,33 +17,45 @@ for /f %%i in ('where r_clang_wrapper.bat') do (
 set "CLANG_WRAPPER_PATH_CYG=%CLANG_WRAPPER_PATH:\=/%"
 set "CLANG_WRAPPER_PATH_CYG=/%CLANG_WRAPPER_PATH_CYG::=%"
 
-for /f %%i in ('where clang++.exe') do (
-  set "CLANGXX_PATH=%%i"
-  goto :clangxx_end
+for /f "tokens=*" %%i in ('where clang++.exe') do (
+  echo %%i | findstr /i /c:"Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools" >nul
+  if errorlevel 1 (
+    set "CLANGXX_PATH=%%i"
+    goto :clangxx_end
+  )
 )
 :clangxx_end
 set "CLANGXX_PATH_CYG=%CLANGXX_PATH:\=/%"
 set "CLANGXX_PATH_CYG=/%CLANGXX_PATH_CYG::=%"
 
-for /f %%i in ('where r_clangxx_wrapper.bat') do (
-  set "CLANGXX_WRAPPER_PATH=%%i"
-  goto :clangxx_wrapper_end
+for /f "tokens=*" %%i in ('where r_clangxx_wrapper.bat') do (
+  echo %%i | findstr /i /c:"Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools" >nul
+  if errorlevel 1 (
+    set "CLANGXX_WRAPPER_PATH=%%i"
+    goto :clangxx_wrapper_end
+  )
 )
 :clangxx_wrapper_end
 set "CLANGXX_WRAPPER_PATH_CYG=%CLANGXX_WRAPPER_PATH:\=/%"
 set "CLANGXX_WRAPPER_PATH_CYG=/%CLANGXX_WRAPPER_PATH_CYG::=%"
 
-for /f %%i in ('where llvm-ar.exe') do (
-  set "LLVM_AR_PATH=%%i"
-  goto :ar_end
+for /f "tokens=*" %%i in ('where llvm-ar.exe') do (
+  echo %%i | findstr /i /c:"Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools" >nul
+  if errorlevel 1 (
+    set "LLVM_AR_PATH=%%i"
+    goto :ar_end
+  )
 )
 :ar_end
 set "LLVM_AR_PATH_CYG=%LLVM_AR_PATH:\=/%"
 set "LLVM_AR_PATH_CYG=/%LLVM_AR_PATH_CYG::=%"
 
-for /f %%i in ('where llvm-nm.exe') do (
-  set "LLVM_NM_PATH=%%i"
-  goto :nm_end
+for /f "tokens=*" %%i in ('where llvm-nm.exe') do (
+  echo %%i | findstr /i /c:"Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools" >nul
+  if errorlevel 1 (
+    set "LLVM_NM_PATH=%%i"
+    goto :nm_end
+  )
 )
 :nm_end
 set "LLVM_NM_PATH_CYG=%LLVM_NM_PATH:\=/%"
