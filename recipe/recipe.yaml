@@ -21,6 +21,7 @@ tests:
       recipe:
         - test.cpp
         - test_cxx17.cpp
+    script: run_test.bat
     requirements:
       run:
         - if: win
