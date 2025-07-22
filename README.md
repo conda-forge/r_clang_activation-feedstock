@@ -12,7 +12,6 @@ Summary: Activation scripts for using Clang as a compiler in R packages
 Use clang as an alternative compiler for R packages. Add this as a
 build requirement using the Jinja function `compiler('r_clang')`.
 
-
 Current build status
 ====================
 
