@@ -50,7 +50,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-r_clang_win--64-green.svg)](https://anaconda.org/conda-forge/r_clang_win-64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r_clang_win-64.svg)](https://anaconda.org/conda-forge/r_clang_win-64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r_clang_win-64.svg)](https://anaconda.org/conda-forge/r_clang_win-64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r_clang_win-64.svg)](https://anaconda.org/conda-forge/r_clang_win-64) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r__clang__win--64-green.svg)](https://anaconda.org/conda-forge/r_clang_win-64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r_clang_win-64.svg)](https://anaconda.org/conda-forge/r_clang_win-64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r_clang_win-64.svg)](https://anaconda.org/conda-forge/r_clang_win-64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r_clang_win-64.svg)](https://anaconda.org/conda-forge/r_clang_win-64) |
 
 Installing r_clang_activation
 =============================
