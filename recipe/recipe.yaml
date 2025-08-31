@@ -1,14 +1,14 @@
 schema_version: 1
 
 context:
-  version: 20.1
+  version: 21.1
 
 package:
   name: r_clang_${{ target_platform }}
   version: ${{ version }}
 
 build:
-  number: 1
+  number: 0
   skip: not win
 
 requirements:
