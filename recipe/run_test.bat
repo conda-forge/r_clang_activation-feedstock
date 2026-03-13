@@ -21,3 +21,15 @@ echo CXX_STD=CXX17 > compiletest17\src\Makevars.win
 IF %ERRORLEVEL% NEQ 0 exit 1
 R CMD INSTALL --build compiletest17
 IF %ERRORLEVEL% NEQ 0 exit 1
+
+@rem Test compilation with C++20-only features
+R -e "usethis::create_package('compiletest20')"
+IF %ERRORLEVEL% NEQ 0 exit 1
+md "compiletest20\src"
+IF %ERRORLEVEL% NEQ 0 exit 1
+copy test_cxx20.cpp "compiletest20\src\test_cxx20.cpp"
+IF %ERRORLEVEL% NEQ 0 exit 1
+echo CXX_STD=CXX20 > compiletest20\src\Makevars.win
+IF %ERRORLEVEL% NEQ 0 exit 1
+R CMD INSTALL --build compiletest20
+IF %ERRORLEVEL% NEQ 0 exit 1

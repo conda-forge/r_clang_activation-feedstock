@@ -1,14 +1,14 @@
 schema_version: 1
 
 context:
-  version: 21.1
+  version: "21.1"
 
 package:
   name: r_clang_${{ target_platform }}
   version: ${{ version }}
 
 build:
-  number: 0
+  number: 1
   skip: not win
 
 requirements:
@@ -21,6 +21,7 @@ tests:
       recipe:
         - test.cpp
         - test_cxx17.cpp
+        - test_cxx20.cpp
     script: run_test.bat
     requirements:
       run:
