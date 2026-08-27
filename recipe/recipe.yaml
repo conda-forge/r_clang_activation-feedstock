@@ -49,3 +49,4 @@ extra:
   recipe-maintainers:
     - conda-forge/r
     - xhochy
+    - h-vetinari
